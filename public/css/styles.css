@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Playfair+Display:ital@1&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 17px;
+  overflow: hidden;
+  font-family: "Major Mono Display", monospace;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+.page-container header {
+  flex-direction: column;
+  width: 100%;
+  margin: 3rem 3rem;
+  justify-content: space-evenly !important;
+}
+.page-container main {
+  width: 100%;
+}
+.page-container footer {
+  width: 100vw;
+  color: blue;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.3rem 0.3rem;
+}
+.page-container footer p {
+  color: green;
+}
+.page-container footer .daily-quote {
+  font-family: "Playfair Display", serif;
+  width: 33%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.welcome-title {
+  max-width: 1280px;
+  padding: 1.5rem;
+}
+
+.plain-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+
+.page-nav {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 16rem !important;
+  flex-wrap: wrap !important;
+}
+.page-nav li a {
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  width: 5rem;
+  padding: 0.5rem 1.4rem;
+  border: 1px dotted blue;
+  background-color: white;
+  text-decoration: none;
+}
+.page-nav li a:active {
+  background-color: black;
+  color: white;
+}
+.page-nav li a:hover {
+  background-color: yellow;
+}
+
+.social-tags {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.social-tags li {
+  border: 1px dotted blue;
+  padding: 0.3rem;
+}
+.social-tags li a:active {
+  background-color: black;
+  color: white;
+}
+.social-tags li a:hover {
+  background-color: yellow;
+}
+
+@media (min-width: 768px) {
+  .page-container header, .page-container footer {
+    flex-direction: row;
+  }
+
+  .page-nav {
+    width: auto !important;
+    flex-wrap: nowrap !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
