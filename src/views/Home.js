@@ -5,6 +5,7 @@ export default class Home extends Component {
     super();
   }
   render() {
+    let quoteDetails = {};
     return (
       <div className="page-container">
         <header className="center">
