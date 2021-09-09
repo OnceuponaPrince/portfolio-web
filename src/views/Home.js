@@ -22,6 +22,30 @@ export default class Home extends Component {
             <span class="cursor">_</span>
           </h1>
         </header>
+        <main className="center">
+          <ul className="page-nav plain-text center">
+            <li>
+              <a href="#" className="center">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" className="center">
+                Musings
+              </a>
+            </li>
+            <li>
+              <a href="#" className="center">
+                CV
+              </a>
+            </li>
+            <li>
+              <a href="#" className="center">
+                Study
+              </a>
+            </li>
+          </ul>
+        </main>
         <footer className="plain-text">
           <p>Copyright 2021 &copy;</p>
           <q className="daily-quote">
