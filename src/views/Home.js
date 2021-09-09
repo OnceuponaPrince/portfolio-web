@@ -4,6 +4,10 @@ export default class Home extends Component {
   constructor() {
     super();
   }
+  randomQuoteGenerator = (quoteDetails) => {
+    let quotes = require("../data/quotes.json");
+    return (quoteDetails = quotes[Math.floor(Math.random() * quotes.length)]);
+  };
   render() {
     let quoteDetails = {};
     return (
