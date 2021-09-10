@@ -6,7 +6,7 @@ export default class Notes extends Component {
         return (
             <div className="page-container container-margin">
                 <Nav />
-                
+                <h1 className="page-headings center">Notes</h1>
                 <Footer />
             </div>
         )

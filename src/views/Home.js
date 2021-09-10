@@ -97,9 +97,9 @@ export class Footer extends Component {
       <div>
         <footer className="plain-text">
           <p>Copyright&copy; 2021</p>
-          <q className="daily-quote">
-            {quoteDetails.quote} — {quoteDetails.author}
-          </q>
+          <p><q className="daily-quote">
+            {quoteDetails.quote}
+          </q> - {quoteDetails.author}</p>
           <ul className="social-tags">
             <li className="center">
               <a
