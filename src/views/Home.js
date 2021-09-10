@@ -4,12 +4,15 @@ export default class Home extends Component {
   constructor() {
     super();
   }
+
   randomQuoteGenerator = (quoteDetails) => {
     let quotes = require("../data/quotes.json");
     return (quoteDetails = quotes[Math.floor(Math.random() * quotes.length)]);
   };
+
   render() {
     let quoteDetails = {};
+    quoteDetails = this.randomQuoteGenerator(quoteDetails);
     return (
       <div className="page-container">
         <header className="center">
@@ -22,7 +25,7 @@ export default class Home extends Component {
             alt="Prince's Photo"
           />
           <h1 className="welcome-title">
-            <span className="welcome">Welcome</span> <br /> to the portfolio of
+            <span className="welcome">Welcome!</span> <br /> to the portfolio of
             the world's most <s>resilient</s> rebellious beginner coder
             <span class="cursor">_</span>
           </h1>
@@ -30,13 +33,13 @@ export default class Home extends Component {
         <main className="center">
           <ul className="page-nav plain-text center">
             <li>
-              <a href="#" className="center">
+              <a href="#" className="about center">
                 About
               </a>
             </li>
             <li>
               <a href="#" className="center">
-                Musings
+                Notes
               </a>
             </li>
             <li>
@@ -45,20 +48,20 @@ export default class Home extends Component {
               </a>
             </li>
             <li>
-              <a href="#" className="center">
+              <a href="#" className="study center">
                 Study
               </a>
             </li>
           </ul>
         </main>
         <footer className="plain-text">
-          <p>Copyright 2021 &copy;</p>
+          <p>Copyright&copy; 2021</p>
           <q className="daily-quote">
             {quoteDetails.quote} — {quoteDetails.author}
           </q>
           <ul className="social-tags">
             <li className="center">
-              <a href="#">
+              <a href="https://www.instagram.com/onceuponaprince__/" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -73,7 +76,7 @@ export default class Home extends Component {
               </a>
             </li>
             <li className="center">
-              <a href="#">
+              <a href="https://github.com/OnceuponaPrince" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -88,7 +91,7 @@ export default class Home extends Component {
               </a>
             </li>
             <li className="center">
-              <a href="#">
+              <a href="https://www.youtube.com/channel/UCubVcTCAIlzeLSZr9iM7TPw" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -103,7 +106,7 @@ export default class Home extends Component {
               </a>
             </li>
             <li className="center">
-              <a href="#" style={{ textDecoration: "none" }}>
+              <a href="https://www.clubhouse.com/@onceuponaprince" target="_blank" style={{ textDecoration: "none" }}>
                 <span role="img" style={{ fontSize: "32px" }} aria-label="wave">
                   👋
                 </span>

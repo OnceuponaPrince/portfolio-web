@@ -1,0 +1,13 @@
+10/9/2021 00:33:00
+
+Title: Writing Code, Comedy
+
+Body: I perform stand up comedy in my spare time. I would even go as far as saying I’m pretty good at it. Often people ask me what it takes to be a good comedian. 
+
+There’s a lot of theory behind comedy - writing, performance, stage presence, the list goes on. But even with all the theory, nothing beats the experience. Comedy, especially standup is very experiential. Nothing is funny until you see it in the wild; until you can see the reaction of the audience. Even then, what might work on one night in one venue, might absolutely bomb on another night in the same venue or in the same night at a different venue.
+
+I find myself drawing parallels with coding. It’s easy to get caught up as a budding developer with all the tutorials available, with all the courses out there. It’s truly overwhelming. However, you can never truly be sure whether your code works or how much code you actually know until you start coding. Then, you get your hands dirty and things start to break. You bash your head against the wall and you cry as the cursor taunts you. Error after error after error. 
+
+But like comedy, when it works, the feeling of euphoria is massive. Like a drug hit, you have the eureka moment! You feel like the world is in your hands and you start over again. 
+
+There is an overlap within comedy and computer science. I’m frustratingly pleased that I attempt to do both.

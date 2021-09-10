@@ -1,8 +1,11 @@
 {
-  "name": "portfolio-web",
-  "version": "1.0.0",
-  "description": "Portfolio Project for University of West London BSc(Hons) Creative Computing",
+  "name": "porfolio-web",
+  "version": "0.2.0",
+  "description": "build",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -11,6 +14,11 @@
   },
   "author": "Prince John Akpeki",
   "license": "ISC",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OnceuponaPrince/portfolio-web.git"
+  },
   "dependencies": {
     "connect": "^3.7.0",
     "npm-install-missing": "^0.1.4",

@@ -1,0 +1,23 @@
+ 2021/09/09 13:49:00
+
+Title: Terminal and Git
+
+Body: I have never really used terminal before, though I know it is an integral tool in any developers arsenal. The lack of a GUI and the required knowledge of commands makes it a hefty task to complete. However, I managed to use the terminal to create my portfolio files, install dependencies and send it to a repository on Github.
+
+Github is also very well-known for developers, so it was necessary that I start using it to build work experience for future jobs. Here are some of the commands that I learnt:
+
+mkdir - creates a new folder
+
+cd .. - takes you one level higher in your directory
+
+cd~ - takes you to the highest level in your directory
+
+git init - initialises an empty git repository for your local system
+
+npm init - initialises a node.js project
+
+npm install - installs dependencies for your project
+
+git add . - prepares all untracked files for a git commit
+
+Now that I have learnt them, it all seems so simple.
