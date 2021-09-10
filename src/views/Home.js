@@ -53,27 +53,27 @@ export class Nav extends Component {
       <div>
         <ul className="page-nav plain-text center">
           <li>
-            <NavLink to="/" activeClassName="active-class" className="home center">
+            <NavLink exact to="/" activeClassName="active-class" className="home center">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" activeClassName="active-class" className="center">
+            <NavLink exact to="/about" activeClassName="active-class" className="center">
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/notes" activeClassName="active-class" className="center">
+            <NavLink exact to="/notes" activeClassName="active-class" className="center">
               Notes
             </NavLink>
           </li>
           <li>
-            <NavLink to="/cv" activeClassName="active-class" className="center">
+            <NavLink exact to="/cv" activeClassName="active-class" className="center">
               CV
             </NavLink>
           </li>
           <li>
-            <NavLink to="/study" activeClassName="active-class" className="study center">
+            <NavLink exact to="/study" activeClassName="active-class" className="study center">
               Study
             </NavLink>
           </li>
