@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Playfair+Display:ital@1&display=swap");
 @keyframes title-highlight {
   0% {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #734e57 50%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #bfb48f 50%);
     background-position: 0% 0;
     background-size: 200% 100%;
+    color: rgba(242, 239, 233, 0.6);
   }
   50% {
     color: rgba(242, 239, 233, 0.9);
   }
   100% {
-    background-image: linear-gradient(to right, #734e57 50%, #734e57 50%);
+    background-image: linear-gradient(to right, #bfb48f 50%, #bfb48f 50%);
     background-position: -199.99% 0;
     color: #f2efe9;
   }
@@ -56,6 +57,35 @@ body::-webkit-scrollbar {
   width: 100%;
   margin-bottom: 3rem;
 }
+.page-container .cards-column {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.page-container .cards-column .card {
+  width: 100%;
+  background-color: #252627;
+  color: #f2efe9;
+  padding: 2rem;
+}
+.page-container .cards-column .card .details {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-container .cards-column .card .details button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+.page-container .cards-column .card .details button i {
+  font-size: 24px;
+}
+.page-container .cards-column .card .invisible {
+  display: none;
+}
 .page-container footer {
   width: 100vw;
   color: #f2efe9;
@@ -68,9 +98,11 @@ body::-webkit-scrollbar {
   font-size: 0.9rem;
 }
 .page-container footer .daily-quote {
-  font-family: "Playfair Display", serif;
-  width: 33%;
+  width: 50%;
   margin: 1rem 0;
+}
+.page-container footer .daily-quote .quote-text {
+  font-family: "Playfair Display", serif;
 }
 
 .center {
@@ -86,9 +118,9 @@ body::-webkit-scrollbar {
   padding-right: 5rem;
 }
 
-.welcome {
+.welcome, .page-heading {
   font-size: 3rem;
-  animation: 2s ease-out 2s normal forwards title-highlight;
+  animation: 1.5s ease-out 0.5s normal forwards title-highlight;
 }
 
 .plain-text {
@@ -189,6 +221,7 @@ body::-webkit-scrollbar {
 
   .daily-quote {
     margin: 1rem;
+    text-align: center;
   }
 
   .home:hover {
