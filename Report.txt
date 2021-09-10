@@ -1,0 +1,4 @@
+Report!
+
+As informed by W3, WSAG and Ashley Firth's *Practical Web Accessibility*, much of the site is constructed using HTML tags that are compatible with screen readers and a graphical design that can be experienced by most who suffer from visual impairments. The color scheme used across the site is dull-toned with a contrast such that it doesn't interfere with the many variations of color blindness. [Insert screenshot with color blindness emulator here]. Where HTML tags that are not compatible with screen-readers are applied, ARIA is used instead. This is especially true for the buttons on the Notes page that show each entry.
+ 
