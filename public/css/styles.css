@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Playfair+Display:ital@1&display=swap");
+@keyframes title-highlight {
+  0% {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #734e57 50%);
+    background-position: 0% 0;
+    background-size: 200% 100%;
+  }
+  50% {
+    color: rgba(242, 239, 233, 0.9);
+  }
+  100% {
+    background-image: linear-gradient(to right, #734e57 50%, #734e57 50%);
+    background-position: -199.99% 0;
+    color: #f2efe9;
+  }
+}
 body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -11,6 +28,10 @@ body {
   font-family: "Major Mono Display", monospace;
   color: #252627;
   background-color: #f2efe9;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .page-container {
@@ -58,6 +79,7 @@ body {
 .welcome-title {
   max-width: 1280px;
   padding: 1.5rem;
+  padding-right: 5rem;
 }
 
 .welcome {
@@ -65,21 +87,6 @@ body {
   animation: 2s ease-out 2s normal forwards title-highlight;
 }
 
-@keyframes title-highlight {
-  0% {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #734e57 50%);
-    background-position: 0% 0;
-    background-size: 200% 100%;
-  }
-  50% {
-    color: rgba(242, 239, 233, 0.9);
-  }
-  100% {
-    background-image: linear-gradient(to right, #734e57 50%, #734e57 50%);
-    background-position: -199.99% 0;
-    color: #f2efe9;
-  }
-}
 .plain-text {
   font-family: "Montserrat", sans-serif;
 }
@@ -102,7 +109,7 @@ body {
 .page-nav li {
   padding: 0;
 }
-.page-nav li a {
+.page-nav li a, .page-nav li .active-class {
   display: flex;
   cursor: pointer;
   text-align: center;
@@ -111,14 +118,21 @@ body {
   color: #252627;
   text-decoration: none;
 }
-.page-nav li a:active {
-  background-color: #564e58;
-  color: #f2efe9;
-}
-.page-nav li a:hover {
+.page-nav li a:hover, .page-nav li .active-class:hover {
   background-color: #734e57;
   color: #f2efe9;
   transform: scale(1.2);
+}
+.page-nav li .active-class {
+  background-color: #564e58;
+  color: #f2efe9;
+  transform: scale(1.2);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.page-nav li .active-class:hover {
+  background-color: #564e58;
+  cursor: initial;
 }
 
 .social-tags {
@@ -150,7 +164,8 @@ body {
     overflow: hidden;
   }
 
-  .page-container header, .page-container footer {
+  .page-container header,
+.page-container footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -170,7 +185,7 @@ body {
     margin: 1rem;
   }
 
-  .about:hover {
+  .home:hover {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
