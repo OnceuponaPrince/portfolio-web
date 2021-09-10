@@ -6,7 +6,7 @@ export default class About extends Component {
         return (
             <div className="page-container container-margin">
                <Nav />
-                <h1 className="page-headings center">About Me</h1>
+                <h1 className="page-heading center">About Me</h1>
                 <p className="page-content plain-text center">Something... something... random fact about me. Now we all laugh as we run down to the stream to skip stones. "What a lovely day this is!"</p>
                <Footer />
             </div>
