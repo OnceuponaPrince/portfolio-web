@@ -1,25 +1,35 @@
+import { Link, NavLink } from "react-router-dom";
 import React, { Component } from "react";
 
-export default class Home extends Component {
+export class Home extends Component {
   constructor() {
     super();
   }
-
-  randomQuoteGenerator = (quoteDetails) => {
-    let quotes = require("../data/quotes.json");
-    return (quoteDetails = quotes[Math.floor(Math.random() * quotes.length)]);
-  };
-
   render() {
-    let quoteDetails = {};
-    quoteDetails = this.randomQuoteGenerator(quoteDetails);
     return (
       <div className="page-container">
+        <Header />
+        <main className="center">
+          <Nav />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+}
+
+class Header extends Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return (
+      <div className="center">
         <header className="center">
           <img
             className="profile-photo"
             width="50%"
-            height="auto"
+            height="50%"
             style={{ maxHeight: "344px", maxWidth: "344px" }}
             src="images/profile_pic.jpg"
             alt="Prince's Photo"
@@ -30,30 +40,61 @@ export default class Home extends Component {
             <span class="cursor">_</span>
           </h1>
         </header>
-        <main className="center">
-          <ul className="page-nav plain-text center">
-            <li>
-              <a href="#" className="about center">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="center">
-                Notes
-              </a>
-            </li>
-            <li>
-              <a href="#" className="center">
-                CV
-              </a>
-            </li>
-            <li>
-              <a href="#" className="study center">
-                Study
-              </a>
-            </li>
-          </ul>
-        </main>
+      </div>
+    );
+  }
+}
+export class Nav extends Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return (
+      <div>
+        <ul className="page-nav plain-text center">
+          <li>
+            <NavLink to="/" activeClassName="active-class" className="home center">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" activeClassName="active-class" className="center">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/notes" activeClassName="active-class" className="center">
+              Notes
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/cv" activeClassName="active-class" className="center">
+              CV
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/study" activeClassName="active-class" className="study center">
+              Study
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    );
+  }
+}
+export class Footer extends Component {
+  constructor() {
+    super();
+  }
+  randomQuoteGenerator = (quoteDetails) => {
+    let quotes = require("../data/quotes.json");
+    return (quoteDetails = quotes[Math.floor(Math.random() * quotes.length)]);
+  };
+  render() {
+    let quoteDetails = {};
+    quoteDetails = this.randomQuoteGenerator(quoteDetails);
+    return (
+      <div>
         <footer className="plain-text">
           <p>Copyright&copy; 2021</p>
           <q className="daily-quote">
@@ -61,7 +102,10 @@ export default class Home extends Component {
           </q>
           <ul className="social-tags">
             <li className="center">
-              <a href="https://www.instagram.com/onceuponaprince__/" target="_blank">
+              <a
+                href="https://www.instagram.com/onceuponaprince__/"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -91,7 +135,10 @@ export default class Home extends Component {
               </a>
             </li>
             <li className="center">
-              <a href="https://www.youtube.com/channel/UCubVcTCAIlzeLSZr9iM7TPw" target="_blank">
+              <a
+                href="https://www.youtube.com/channel/UCubVcTCAIlzeLSZr9iM7TPw"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -106,7 +153,11 @@ export default class Home extends Component {
               </a>
             </li>
             <li className="center">
-              <a href="https://www.clubhouse.com/@onceuponaprince" target="_blank" style={{ textDecoration: "none" }}>
+              <a
+                href="https://www.clubhouse.com/@onceuponaprince"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
                 <span role="img" style={{ fontSize: "32px" }} aria-label="wave">
                   👋
                 </span>
