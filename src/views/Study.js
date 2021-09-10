@@ -6,7 +6,7 @@ export default class Study extends Component {
         return (
             <div className="page-container container-margin">
                 <Nav />
-                <h1 className="page-headings center">Study</h1>
+                <h1 className="page-heading center">Study</h1>
                 <Footer />
             </div>
         )

@@ -6,7 +6,7 @@ export default class CV extends Component {
         return (
             <div className="page-container container-margin">
                 <Nav />
-                <h1 className="page-headings center">CV</h1>
+                <h1 className="page-heading center">CV</h1>
                 <Footer />
             </div>
         )
