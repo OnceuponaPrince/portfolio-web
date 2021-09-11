@@ -16,9 +16,7 @@
   }
 }
 body {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -57,16 +55,26 @@ body::-webkit-scrollbar {
   width: 100%;
   margin-bottom: 3rem;
 }
+.page-container.notes {
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+.page-container.notes q {
+  font-family: "Playfair Display", serif;
+}
 .page-container .cards-column {
   display: flex;
   flex-direction: column;
   width: 80%;
+  margin-bottom: 1.5rem;
 }
 .page-container .cards-column .card {
   width: 100%;
   background-color: #252627;
   color: #f2efe9;
+  margin: 0.7rem;
   padding: 2rem;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
 }
 .page-container .cards-column .card .details {
   width: 100%;
