@@ -1,7 +1,7 @@
 import { Redirect, Route, Switch } from "react-router-dom";
 
 import About from "./views/About.js";
-import CV from "./views/CV.js";
+import {CV} from "./views/CV.js";
 import {Home} from "./views/Home.js";
 import {Notes} from "./views/Notes.js";
 import React from "react";
