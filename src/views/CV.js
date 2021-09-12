@@ -126,6 +126,7 @@ const Basics = () => {
           </li>
         </ul>
       </p>
+      <p>With a background in Computer Science and extensive experience in Sales and Account Management, his services extend to a diverse audience while tackling projects with logical, pragmatic strategies. He acquired Business Development and Project Management in South Korea for over 2 years for one of the largest game publishers in the APAC region.</p>
     </>
   );
 };
