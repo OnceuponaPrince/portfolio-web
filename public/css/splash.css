@@ -1,34 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Playfair+Display:ital@1&display=swap");
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #splashScreen {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #splashScreen > p {
-    text-align: center;
+  text-align: center;
 }
 
 #splashScreen > .slow-load {
-    font-family: "Montserrat", sans-serif;
-    animation: 20s slowLoad;
+  font-family: "Montserrat", sans-serif;
+  animation: 20s slowLoad;
 }
-  
+
 @keyframes slowLoad {
-    0% {
-        visibility: hidden;
-      }  
-      99% {
-        visibility: hidden;
-      }
-    100% {
-      visibility: visible;
-    }
+  0% {
+    visibility: hidden;
   }
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

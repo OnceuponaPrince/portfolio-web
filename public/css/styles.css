@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Playfair+Display:ital@1&display=swap");
 @keyframes title-highlight {
   0% {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #bfb48f 50%);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 50%,
+      #bfb48f 50%
+    );
     background-position: 0% 0;
     background-size: 200% 100%;
     color: rgba(242, 239, 233, 0.6);
@@ -64,7 +68,8 @@ body::-webkit-scrollbar {
 .page-container.notes q {
   font-family: "Playfair Display", serif;
 }
-.page-container.cv label, .page-container.cv .section-content {
+.page-container.cv label,
+.page-container.cv .section-content {
   padding: 0rem 2rem;
 }
 .page-container.cv .section-name {
@@ -141,7 +146,8 @@ body::-webkit-scrollbar {
   padding-right: 5rem;
 }
 
-.welcome, .page-heading {
+.welcome,
+.page-heading {
   font-size: 3rem;
   animation: 1.5s ease-out 0.5s normal forwards title-highlight;
 }
@@ -168,7 +174,8 @@ body::-webkit-scrollbar {
 .page-nav li {
   padding: 0;
 }
-.page-nav li a, .page-nav li .active-class {
+.page-nav li a,
+.page-nav li .active-class {
   display: flex;
   cursor: pointer;
   text-align: center;
@@ -177,7 +184,8 @@ body::-webkit-scrollbar {
   color: #252627;
   text-decoration: none;
 }
-.page-nav li a:hover, .page-nav li .active-class:hover {
+.page-nav li a:hover,
+.page-nav li .active-class:hover {
   background-color: #734e57;
   color: #f2efe9;
   transform: scale(1.2);
@@ -226,7 +234,7 @@ body::-webkit-scrollbar {
   }
 
   .page-container header,
-.page-container footer {
+  .page-container footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;

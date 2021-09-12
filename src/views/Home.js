@@ -35,8 +35,9 @@ class Header extends Component {
             alt="Prince's Photo"
           />
           <h1 className="welcome-title">
-            <span className="welcome">Welcome!</span> <br />to the portfolio of
-            the world's most <s>resilient</s> rebellious beginner coder
+            <span className="welcome">Welcome!</span> <br />
+            to the portfolio of the world's most <s>resilient</s> rebellious
+            beginner coder
             <span className="cursor">_</span>
           </h1>
         </header>
@@ -53,27 +54,52 @@ export class Nav extends Component {
       <div>
         <ul className="page-nav plain-text center">
           <li>
-            <NavLink exact to="/" activeClassName="active-class" className="home center">
+            <NavLink
+              exact
+              to="/"
+              activeClassName="active-class"
+              className="home center"
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/about" activeClassName="active-class" className="center">
+            <NavLink
+              exact
+              to="/about"
+              activeClassName="active-class"
+              className="center"
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/notes" activeClassName="active-class" className="center">
+            <NavLink
+              exact
+              to="/notes"
+              activeClassName="active-class"
+              className="center"
+            >
               Notes
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/cv" activeClassName="active-class" className="center">
+            <NavLink
+              exact
+              to="/cv"
+              activeClassName="active-class"
+              className="center"
+            >
               CV
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/study" activeClassName="active-class" className="study center">
+            <NavLink
+              exact
+              to="/study"
+              activeClassName="active-class"
+              className="study center"
+            >
               Study
             </NavLink>
           </li>
@@ -97,9 +123,10 @@ export class Footer extends Component {
       <div>
         <footer className="plain-text">
           <p>Copyright&copy; 2021</p>
-          <p className="daily-quote"><q className="quote-text">
-            {quoteDetails.quote}
-          </q> - {quoteDetails.author}</p>
+          <p className="daily-quote">
+            <q className="quote-text">{quoteDetails.quote}</q> -{" "}
+            {quoteDetails.author}
+          </p>
           <ul className="social-tags">
             <li className="center">
               <a
@@ -121,7 +148,11 @@ export class Footer extends Component {
               </a>
             </li>
             <li className="center">
-              <a href="https://github.com/OnceuponaPrince" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/OnceuponaPrince"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
