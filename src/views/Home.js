@@ -35,7 +35,7 @@ class Header extends Component {
             alt="Prince's Photo"
           />
           <h1 className="welcome-title">
-            <span className="welcome">Welcome!</span> <br /> to the portfolio of
+            <span className="welcome">Welcome!</span> <br />to the portfolio of
             the world's most <s>resilient</s> rebellious beginner coder
             <span className="cursor">_</span>
           </h1>

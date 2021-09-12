@@ -62,9 +62,11 @@ body::-webkit-scrollbar {
 .page-container.notes q {
   font-family: "Playfair Display", serif;
 }
-.page-container .cards-column {
+.page-container .flex-col {
   display: flex;
   flex-direction: column;
+}
+.page-container .cards-column {
   width: 80%;
   margin-bottom: 1.5rem;
 }
@@ -74,7 +76,7 @@ body::-webkit-scrollbar {
   color: #f2efe9;
   margin: 0.7rem;
   padding: 2rem;
-  box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 8px rgba(0, 0, 0, 0.5);
 }
 .page-container .cards-column .card .details {
   width: 100%;

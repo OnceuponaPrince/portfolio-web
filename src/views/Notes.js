@@ -60,7 +60,7 @@ const CardColumn = (props) => {
     }, [status]);
     return (
 
-        <div className="cards-column center">
+        <div className="cards-column flex-col center">
            {ready ? cardColumn : status}
         </div>
     );
@@ -101,8 +101,10 @@ class Card extends Component {
         return (
             <div key={this.props.id} className="card" role="document">
                         <span className="details" aria-label="Entry information">
+                            <span>
                             <h2>{this.props.title}</h2>
-                            <h3><TimeAgo date={this.props.date} /></h3>
+                            <h4><TimeAgo date={this.props.date} /></h4>
+                            </span>
                             <button className="center" 
                                     onClick={(event) => {
                                         if (!this.state.expand) {
