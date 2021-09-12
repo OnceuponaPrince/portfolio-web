@@ -6,7 +6,7 @@
     <title>Prince's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="theme-color" content="#F2EFE9" />
     <meta
       name="description"
       content="Portfolio of the world's most resilient beginner comedienne developer!"
@@ -15,12 +15,23 @@
       name="keywords"
       content="code, coding, programming, program, onceuponaprince, university, study, students, teach, portfolio, ideas, html, css, js, javascript, react, language, languages, prince"
     />
-    <meta name="robots" content="noindex, nofollow" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="14 days" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-control" content="public, max-age=2592000" />
     <!-- Assets -->
+    <link
+      rel="preload"
+      href="%PUBLIC_URL%/css/splash.css?n=t-R1GhT5"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/css/splash.css?n=t-R1GhT5"
+    />
+    <link rel="preload" href="%PUBLIC_URL%/splash.gif" as="image" />
+
     <link
       rel="preload"
       href="%PUBLIC_URL%/css/styles.css?xyz=FKdVtcHp33pL"
@@ -39,9 +50,23 @@
     />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- Styles -->
+    <style>
+      #root {
+        width: 100%; 
+        height: 100%; 
+        overflow-x: hidden; 
+        overflow-y: scroll;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root" style="width: 100%; height: 100%"></div>
+    <div id="splashScreen" role="status">
+      <img src="splash.gif" title="Papa Panda and Baby Panda bounce while you wait UwU" alt="Papa Panda and Baby Panda bounce while you wait." width="300px" height="300px" />
+      <p>Loading...</p>
+      <p class="slow-load">Er, this is taking longer than usual. Refresh the page or try again later.</p>
+    </div>
+    <div id="root" class="hidden"></div>
   </body>
 </html>
