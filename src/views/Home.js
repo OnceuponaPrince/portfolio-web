@@ -105,6 +105,7 @@ export class Footer extends Component {
               <a
                 href="https://www.instagram.com/onceuponaprince__/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +121,7 @@ export class Footer extends Component {
               </a>
             </li>
             <li className="center">
-              <a href="https://github.com/OnceuponaPrince" target="_blank">
+              <a href="https://github.com/OnceuponaPrince" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -138,6 +139,7 @@ export class Footer extends Component {
               <a
                 href="https://www.youtube.com/channel/UCubVcTCAIlzeLSZr9iM7TPw"
                 target="_blank"
+                rel="noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,6 +158,7 @@ export class Footer extends Component {
               <a
                 href="https://www.clubhouse.com/@onceuponaprince"
                 target="_blank"
+                rel="noreferrer"
                 style={{ textDecoration: "none" }}
               >
                 <span role="img" style={{ fontSize: "32px" }} aria-label="wave">
