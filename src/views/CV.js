@@ -115,7 +115,7 @@ const Basics = () => {
             <i>
               Shinchon-ro-1-gil 26 201
               <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03870
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03875
               <br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seoul
               <br />
@@ -126,7 +126,7 @@ const Basics = () => {
           </li>
         </ul>
       </p>
-      <p>With a background in Computer Science and extensive experience in Sales and Account Management, his services extend to a diverse audience while tackling projects with logical, pragmatic strategies. He acquired Business Development and Project Management in South Korea for over 2 years for one of the largest game publishers in the APAC region.</p>
+      <p>Possessing a background in Computer Science and extensive experiences ranging from Sales and Account Management to Data Analysis and Software Engineering, hiis services extend to a diverse audience while tackling projects leveraging logical and pragmatic techniques. Since arriving in Korea he has embraced Korean culture and developed a truly unique business personality.</p>
     </>
   );
 };
@@ -134,6 +134,33 @@ const Basics = () => {
 const Work = () => {
   return (
     <>
+    <div>
+        <div style={{ textAlign: "center" }}>
+          <p>Gambae</p>
+          <p>Co-Founder & Creative Technologies</p>
+          <p>July 2021—Present</p>
+        </div>
+          <ul>
+            <li>Provide analysis and conduct market research on Korean sectors</li>
+            <li>
+            Harness latest technological stacks to create digital experiences
+            </li>
+            <li>
+            Identify potential partnerships and seek out a potential client base
+            </li>
+            <li>
+            Advise clients on services that satisfy their needs
+            </li>
+            <li>
+            Follow best practices to ensure client satisfaction
+            </li>
+            <li>
+            Capitalise on market gap for establishing business operations
+            </li>
+            <li>Pivot and stay ahead of market trends</li>
+          </ul>
+      </div>
+      <hr />
       <div>
         <div style={{ textAlign: "center" }}>
           <p>Line Games / PiG Corporation</p>
@@ -143,70 +170,61 @@ const Work = () => {
               https://www.line.games/
             </a>
           </p>
-          <p>May 2019 — Present</p>
+          <p>May 2019 — Sept 2021</p>
         </div>
-        <p>
           <ul>
             <li>
-              Research and identify new business opportunities - including new
-              markets, growth areas, trends, customers, partnerships, products
-              and services
+            Research and identify new business opportunities
             </li>
             <li>
-              Generate leads and cold call prospective clients for collaboration
+            Generate leads and cold call prospective clients
             </li>
             <li>Foster and develop relationships with clients</li>
             <li>
-              Understand the needs of clients and respond effectively with a
-              plan of how to meet these
+            Understand the needs of clients and respond effectively an appropriate plan of action
             </li>
             <li>
-              Liaise with internal and external teams to facilitate project
-              efficiency
+            Liaise with internal and external teams to facilitate project efficiency
             </li>
             <li>Optimising existing business operations</li>
             <li>
-              Attend seminars, conferences and events to further industry
-              knowledge • Finding, testing, optimising, and publishing potential
-              games
+            Attend seminars, conferences and events to further industry knowledge -
+including identifying market trends
             </li>
             <li>
-              Identifying quality games, partnerships and impactful industry
-              trends
+            Identify, test, and publish games from indie development partnerships
             </li>
-            <li>Management of marketing campaigns and production pipelines</li>
+            <li>Manage marketing campaigns and production pipelines</li>
           </ul>
-        </p>
       </div>
+      <hr />
       <div>
         <div style={{ textAlign: "center" }}>
           <p>Standup Seoul</p>
           <p>Business Development Manager</p>
-          <p>December 2019 — July 2020</p>
+          <p>December 2019 — June 2021</p>
         </div>
         <p>
           <ul>
             <li>Draw up client contracts with collaborative partners</li>
             <li>
-              Understand the business services and be able to advise and teach
-              others about them
+            Manage staff ensuring they understand the need for change and the
+needs of the organisation
             </li>
             <li>
-              Ensure staff are on board throughout the organisation, understand
-              the need for change and what is required of them
+            Train members of my team and arranging external training
             </li>
             <li>
-              Train members of my team, arranging external training where
-              appropriate
+            Create promotional strategies and activities for online marketing
             </li>
             <li>
-              Create promotional strategies and activities for online marketing
+            Grow the business and build traction with international collaborators
             </li>
             <li>
-              Grow the business from the ground up and build traction with
-              international collaborators
+            Seek out financial support and sponsorship partners
             </li>
-            <li>Seek out financial support and sponsorship partners</li>
+            <li>Identify potential performance venues
+</li>
           </ul>
         </p>
       </div>
@@ -218,6 +236,13 @@ const Education = () => {
   return (
     <>
       <div>
+      <p>
+          <i>Self-taught Programmer</i>
+          <br />
+          Virtual Learning Sources
+          <br />
+          April 2021 — Present
+        </p>
         <p>
           <i>BSc Creative Computing</i>
           <br />
@@ -249,10 +274,12 @@ const Qualifications = () => {
     <>
       <div style={{ textAlign: "center" }}>
         <p>Facebook Social Media Marketing</p>
-        <p>Google IT Support</p>
         <p>IBM Customer Engagement Specialist </p>
         <p>Responsive Web Design</p>
-        <p>Google Digital Garage (Online Marketing)</p>
+        <p>Javascript Fundamentals</p>
+        <p>Google Digital Garage - Online Marketing</p>
+        <p>Business English Teacher’s License</p>
+        <p>TESOL</p>
       </div>
     </>
   );
@@ -262,11 +289,13 @@ const Skills = () => {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>PHP</p>
-        <p>SQL</p>
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>Sass</p>
+        <p>React</p>
         <p>Javascript</p>
+        <p>Angular</p>
+        <p>Unity</p>
       </div>
     </>
   );
