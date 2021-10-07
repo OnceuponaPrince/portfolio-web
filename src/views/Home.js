@@ -8,9 +8,11 @@ export class Home extends Component {
   render() {
     return (
       <div className="page-container">
-        <Header />
+      <nav style={{ paddingTop:"3rem" }}>
+        <Nav />
+        </nav>
         <main className="center">
-          <Nav />
+        <Header /> 
         </main>
         <Footer />
       </div>
